@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 39.5663, 42.077 )
 
-[node name="Player" index="0" instance=ExtResource( 1 )]
+[node name="Player" instance=ExtResource( 1 )]
 rotation = 0.00553571
 script = ExtResource( 2 )
 speed = 200
@@ -31,4 +31,8 @@ region_rect = Rect2( 685, 14, 59, 24 )
 
 [node name="MuzzleExit" parent="Turret" index="0"]
 position = Vector2( 55, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="." index="4"]
+current = true
+zoom = Vector2( 1.4, 1.4 )
 
